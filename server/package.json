@@ -4,7 +4,9 @@
 	"description": "An ecommerce store built with MERN (MongoDB, Express, React, NodeJS) stack, and utilizes Stripe payment API",
 	"main": "app.js",
 	"scripts": {
-		"dev:server": "node --loader ts-node/esm server/app.ts",
+		"start": "NODE server/server.js",
+		"dev": "set NODE_ENV=DEVELOPMENT& nodemon server/server",
+		"prod": "set NODE_ENV=PRODUCTION& nodemon server/server",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -26,9 +28,6 @@
 		"mongoose": "^6.0.14"
 	},
 	"devDependencies": {
-		"@types/express": "^4.17.13",
-		"@types/node": "^16.11.11",
-		"nodemon": "^2.0.15",
-		"ts-node": "^10.4.0"
+		"nodemon": "^2.0.15"
 	}
 }
