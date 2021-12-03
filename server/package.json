@@ -4,7 +4,7 @@
 	"description": "An ecommerce store built with MERN (MongoDB, Express, React, NodeJS) stack, and utilizes Stripe payment API",
 	"main": "app.js",
 	"scripts": {
-		"start": "NODE backend/server.js",
+		"start": "NODE server/server.js",
 		"dev": "set NODE_ENV=DEVELOPMENT& nodemon server/server",
 		"prod": "set NODE_ENV=PRODUCTION& nodemon server/server",
 		"test": "echo \"Error: no test specified\" && exit 1"
